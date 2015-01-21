@@ -86,6 +86,8 @@
     [_btnEdit addTarget:self action:@selector(handleEdit:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_btnEdit];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+    
+    self.title = @"我的收藏";
 }
 
 #pragma mark - tableview delegate & datasource
